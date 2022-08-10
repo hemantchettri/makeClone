@@ -1,0 +1,86 @@
+.table__container {
+    background: hsl(0, 10%, 94%);
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.table__container * {
+    margin: 0;
+    padding: 0;
+}
+
+.table__container-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.table__container-row:not(:last-child)::after {
+    content: '';
+    background: #333;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+}
+
+.table__container-row:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.table__container>.table__container-row:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.table__container-col:first-child {
+    width: 120px;
+    font-weight: bold;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+.table__container-col {
+    height: 100%;
+    margin-left: 1rem;
+}
+
+.table__container-col:last-child {
+    width: calc(100% - 120px);
+}
+
+.table__container-subHead {
+    font-size: 12px;
+}
+
+.table__container-content {
+    line-height: 0.95;
+}
+
+.deliverable {
+    background-color: #E9FFF3;
+    border-radius: 10px;
+}
+
+.risky {
+    background-color: #FFF0F0;
+    border-radius: 10px;
+}
+
+.undeliverable {
+    background-color: #FFE8E9;
+    border-radius: 10px;
+}
+
+.content {
+    font-size: 15px;
+    font-weight: normal;
+    color: #000;
+    margin-left: 1rem;
+}
+
+.topic {
+    font-weight: normal;
+}
